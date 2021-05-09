@@ -1,0 +1,22 @@
+{
+  "name": "caesar-cipher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreyb622/Caesar-cipher..git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreyb622/Caesar-cipher./issues"
+  },
+  "homepage": "https://github.com/andreyb622/Caesar-cipher.#readme",
+  "dependencies": {
+    "commander": "^7.2.0"
+  }
+}
