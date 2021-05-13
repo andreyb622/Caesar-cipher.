@@ -15,7 +15,7 @@ const readable = file => {
 }
 
 const writable = file => {
-  if(!file) {
+  if(file === undefined) {
       class WritableStream extends Writable {
           _write(chunk, encoding, callback) {
               console.log(`output text: \n${ chunk.toString() }`)

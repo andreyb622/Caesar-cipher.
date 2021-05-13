@@ -5,18 +5,18 @@ const dataHandle = (data, shift) => {
 
   if((shift % alphabet) === 0) {
     return data
-};
+  };
 
-if(shift < 0) {
-    shift += alphabet;
-};
+  if(shift < 0) {
+      shift += alphabet;
+  };
 
-  let resultStr = ''
+  let resultStr = []
 
   for(let i = 0; i < data.length; i++) {
     let symbol = data[i]
     if(symbol.match(/[a-z]/i)) {
-        const charCode = 115
+        const charCode = data.charCodeAt(i)
         if (charCode >= 65 && charCode <= 90) {
             symbol = String.fromCharCode(((charCode - 65 + shift) % alphabet) + 65)
         } else if (charCode >= 97 && charCode <= 122) {
